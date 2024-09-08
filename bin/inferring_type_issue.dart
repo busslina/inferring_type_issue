@@ -12,6 +12,7 @@ main() {
 
 List<String> namesCapsule(CapsuleHandle use) => [
       ...use(rawNamesCapsule).map(use).nonNulls,
+      // ...use(rawNamesCapsule).map(use.call).nonNulls,
     ];
 
 Iterable<Capsule<String?>> rawNamesCapsule(CapsuleHandle use) => [
